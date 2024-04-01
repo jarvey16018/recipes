@@ -1,0 +1,16 @@
+.img-fluid {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 50vh; /* Adjust the percentage as needed */
+    object-fit: cover; /* Crop and fit the image */
+}
+
+@media (max-width: 768px) { /* Adjust for smaller screens */
+    .img-fluid {
+        object-fit: contain; /* Uncrop on smaller screens */
+        max-width: 100%; /* Ensure image doesn't exceed viewport width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
