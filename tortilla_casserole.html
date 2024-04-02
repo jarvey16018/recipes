@@ -12,12 +12,12 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-light">
+<nav class="navbar navbar-expand-md navbar-light bg-secondary">
     <div class="container-xxl">
       <a href="#intro" class="navbar-brand">
         <span class="fw-bold text-secondary">
             <i class="bi bi-book-half"></i>
-            <a class="nav-link fw-bold text-secondary" style="font-size: 30px;" href="index.html">My Recipes</a> 
+            <a class="nav-link fw-bold text-white" style="font-size: 30px;" href="index.html">My Recipes</a> 
         </span>
       </a>
       <!-- toggle butt for mobile nav -->
@@ -52,19 +52,19 @@
     </div> 
 </nav>
 
-    <h1>Tortilla Casserole</h1>
-    <img src="../img/tortillacas.jpg" alt="a picture of a torilla casserole" height="310" width="400">
-    <h2>Ingredients</h2>
-    <ul>
-        <li>2 cans of cream of chicken soup</li>
-        <li>1 pint sour cream (16 oz.)</li>
-        <li>1 can of diced chilis</li>
-        <li>1 can of chicken</li>
-        <li>12 flour tortillas</li>
-        <li>1 cup of shredded colby-jack cheese</li>
+   
+    <img src="../img/tortillacas.jpg" alt="a picture of a torilla casserole" class="img-fluid">
+    <h2 class="mt-5 mx-5">Tortilla Casserole Ingredients</h2>
+    <ul class="mx-5" id="ingredient-list">
+        <li><input type="checkbox" onchange="toggleCheck(this)"> <span>2 cans of cream of chicken soup</span></li>
+        <li><input type="checkbox" onchange="toggleCheck(this)"> <span>1 pint sour cream (16 oz.)</span></li>
+        <li><input type="checkbox" onchange="toggleCheck(this)"> <span>1 can of diced chilis</span></li>
+        <li><input type="checkbox" onchange="toggleCheck(this)"> <span>1 can of chicken</span></li>
+        <li><input type="checkbox" onchange="toggleCheck(this)"> <span>12 flour tortillas</span></li>
+        <li><input type="checkbox" onchange="toggleCheck(this)"> <span>1 cup of shredded colby-jack cheese</span></li>
     </ul>
-    <h2>Directions</h2>
-    <ol>
+    <h2 class="mt-3 mx-5">Directions</h2>
+    <ol class="mx-5 mb-5">
         <li>Preheat oven to 350°F</li>
         <li>Mix together the cream of chicken, sour cream, green chilis, and chicken</li>
         <li>Tear up the tortillas into 1 inch pieces and mix into the wet ingredients</li>
@@ -74,5 +74,12 @@
         <li>Remove the aluminium foil and bake for another 15 mins</li>
         <li>Remove from oven when the cheese is melted and the dish is bubbling around the sides</li>
     </ol>
+
+    <script>
+        function toggleCheck(checkbox) {
+            checkbox.parentNode.querySelector("span").classList.toggle("checked");
+        }
+    </script>
+
 </body>
 </html>

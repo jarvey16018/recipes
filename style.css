@@ -6,6 +6,11 @@
     object-fit: cover; /* Crop and fit the image */
 }
 
+.checked {
+    text-decoration: line-through;
+    color:red;
+}
+
 @media (max-width: 768px) { /* Adjust for smaller screens */
     .img-fluid {
         object-fit: contain; /* Uncrop on smaller screens */
@@ -14,3 +19,16 @@
     }
 }
 
+#about {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#cooking {
+    margin-top: 50px;
+}
+
+#subtitle {
+    margin-bottom: 50px;
+}
